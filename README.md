@@ -14,7 +14,9 @@ Here are steps to get this working:
 2. Unzip to a place you'll remember like desktop. There will be 2 files: mnist_train.csv and mnist_test.csv
 3. Install python libraries: matplotlib and pandas. If you receive an "error: externally-managed-environment" then follow this link and use this 1 line of code in the terminal:
 https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
+
 sudo rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED
+
 Then in the terminal type:
 
 pip install matplotlib
