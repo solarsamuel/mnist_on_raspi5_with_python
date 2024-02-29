@@ -15,18 +15,24 @@ Here are steps to get this working:
 3. Install python libraries: matplotlib and pandas. If you receive an "error: externally-managed-environment" then follow this link and use this 1 line of code in the terminal:
 https://www.jeffgeerling.com/blog/2023/how-solve-error-externally-managed-environment-when-installing-pip3
 sudo rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED
-Then in the terminal type:  
+Then in the terminal type:
+
 pip install matplotlib
+
 pip install pandas
-4. Setup the MNIST architecture and train the model using the mnist_train.csv file. Copy the code from the file mnist_setup_and_train.py and run with the green triangle in the Thonny editor.
+
+5. Setup the MNIST architecture and train the model using the mnist_train.csv file. Copy the code from the file mnist_setup_and_train.py and run with the green triangle in the Thonny editor.
 
 You can adjust the training below. Iterations run roughly at 10 iterations in 10 seconds or 1 iteration per second. 500 iterations yields roughly 85% accuracy. 1000 iterations --> 88% accuracy. 10,000 iterations --> 93% accuracy. 40,000 iterations --> 95% accuracy. 
 
 W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500)
 
 5. Once the neural network has been trained (We recommend starting with 500 iterations, around 10 minutes to run) then you can do a number of things in the Thonny Python shell below the setup and training code:
+   
   A. Test accuracy - Copy the code from the file: accuracy_testing_after_training.py to the Thonny Shell and press enter. Results should be between 85% and 95% depending on iterations.
+  
   B. Plot weights and biases - Copy the code from the file: plot_weights_and_biases_after_training.py to the Thonny Shell and press enter.
+  
   C. Save the weights and biases - Copy the code from the file: save_weights_and_biases_csv_after_training.py to the Thonny Shell and press enter.
 
 
