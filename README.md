@@ -1,5 +1,5 @@
 # mnist_on_raspi5_with_python
-We train the model and run inference with python on a Raspberry Pi 5 - single hidden layer of 10 neurons.
+We train the MNIST model and run inference with python on a Raspberry Pi 5 - single hidden layer of 10 neurons. The input is 28x28 greyscaled pixels. The output is 10 neurons corresponding to the digits 0 to 9. 
 
 This is run on a Raspberry Pi 5 with 4GB RAM running the Debian 12 Bookworm OS with Python version 3.11.2. 
 
