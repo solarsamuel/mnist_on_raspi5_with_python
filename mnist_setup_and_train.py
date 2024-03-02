@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+import time
+start_time = time.time()
 
 data = pd.read_csv('/home/pi/Desktop/mnist_train.csv')
 
@@ -88,7 +90,9 @@ def gradient_descent(X, Y, alpha, iterations):
     return W1, b1, W2, b2
 
 #uncomment the line below if you'd like to train the model
-W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 500)
+W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.10, 100)
+
+print("--- %s seconds ---" % (time.time() - start_time))
 
 def make_predictions(X, W1, b1, W2, b2):
     _, _, _, A2 = forward_prop(W1, b1, W2, b2, X)
@@ -106,3 +110,5 @@ def test_prediction(index, W1, b1, W2, b2):
     plt.gray()
     plt.imshow(current_image, interpolation='nearest')
     plt.show()
+    
+ 
