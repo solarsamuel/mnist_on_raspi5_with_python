@@ -110,5 +110,11 @@ def test_prediction(index, W1, b1, W2, b2):
     plt.gray()
     plt.imshow(current_image, interpolation='nearest')
     plt.show()
+
+    #Test this with the following lines in the Thonny shell below:
+    #test_prediction(0, W1, b1, W2, b2)
+    #test_prediction(1, W1, b1, W2, b2)
+    #dev_predictions = make_predictions(X_dev, W1, b1, W2, b2)
+    #get_accuracy(dev_predictions, Y_dev)
     
  
